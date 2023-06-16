@@ -18,9 +18,6 @@ window.addEventListener('load', () => {
     
     const baseUrl = 'https://res.cloudinary.com/di897duch/image/upload'
     const activeImage = document.querySelector('.carousel-item.active img');
-    const width = activeImage.offsetWidth;
-    const height = activeImage.offsetHeight;
-    const carouselImages = document.querySelectorAll('.carousel-item:not(.active) img');
     Array.from(document.querySelectorAll('img')).forEach(image => {
         if (image.alt == "Logo instagram") {
             return

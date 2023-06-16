@@ -25,14 +25,14 @@ window.addEventListener('load', () => {
             const { offsetWidth, offsetHeight} = activeImage
             console.log(offsetWidth, offsetHeight)
             const pixelRatio = window.devicePixelRatio || 1.0
-            const imageParams = `w_${100 * Math.round(offsetWidth * pixelRatio / 100)},h_${100 * Math.round(offsetHeight * pixelRatio / 100)},c_fill,g_auto,f_webp`
+            const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},c_fill,g_auto,f_webp`
             const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
             image.src = url
         } else {
             const { offsetWidth, offsetHeight} = image
             console.log(offsetWidth, offsetHeight)
             const pixelRatio = window.devicePixelRatio || 1.0
-            const imageParams = `w_${100 * Math.round(offsetWidth * pixelRatio / 100)},h_${100 * Math.round(offsetHeight * pixelRatio / 100)},c_fill,g_auto,f_webp`
+            const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},c_fill,g_auto,f_webp`
             const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
             image.src = url
         }

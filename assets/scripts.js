@@ -14,16 +14,28 @@ $(document).ready(function() {
     });
 });
 
-(() => {
+
+window.addEventListener('load', () => {
     const baseUrl = 'https://res.cloudinary.com/di897duch/image/upload'
     console.log(baseUrl)
     Array.from(document.querySelectorAll('img')).forEach(image => {
-        const { clientWidth, clientHeight } = image
-        console.dir(image)
-      const pixelRatio = window.devicePixelRatio || 1.0
-      const imageParams = `w_${100 * Math.round(clientWidth * pixelRatio / 100)},h_${100 * Math.round(clientHeight * pixelRatio / 100)},c_fill,g_auto,f_auto`
-      const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
-      image.src = url
+        if (image.alt == "Logo instagram") {
+            return
+        }
+        const { offsetWidth, offsetHeight} = image
+        if (offsetWidth || offsetHeight == 0) {
+         const activeImage = document.querySelector('.carousel-item.active img');
+        const { offsetWidth, offsetHeight} = activeImage
+        const pixelRatio = window.devicePixelRatio || 1.0
+        const imageParams = `w_${100 * Math.round(offsetWidth * pixelRatio / 100)},h_${100 * Math.round(offsetHeight * pixelRatio / 100)},c_fill,g_auto,f_auto`
+        const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
+        image.src = url
+        } else {
+            const pixelRatio = window.devicePixelRatio || 1.0
+            const imageParams = `w_${100 * Math.round(offsetWidth * pixelRatio / 100)},h_${100 * Math.round(offsetHeight * pixelRatio / 100)},c_fill,g_auto,f_auto`
+            const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
+            image.src = url
+        }
+       
     })
-  })()
-  
+})

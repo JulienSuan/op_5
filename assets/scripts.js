@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
         if (image.alt == "Logo instagram") {
             return
         }
-        if (image.offsetHeight == 0 && image.offsetHeight == 0) {
+        if (image.alt == "Photo de deux hommes dans un festival levant les bras" || image.alt == "Photo d'un mariage où le marier embrasse la marier") {
             const { offsetWidth, offsetHeight} = activeImage
             console.log(offsetWidth, offsetHeight)
             const pixelRatio = window.devicePixelRatio || 1.0

@@ -27,3 +27,9 @@ $(document).ready(function() {
     })
   })()
   
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 640) {
+        
+    }
+  })

@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
             return
         }
         const { offsetWidth, offsetHeight} = image
-        if (offsetWidth || offsetHeight == 0) {
+        if (offsetWidth && offsetHeight == 0) {
          const activeImage = document.querySelector('.carousel-item.active img');
         const { offsetWidth, offsetHeight} = activeImage
         const pixelRatio = window.devicePixelRatio || 1.0
@@ -31,6 +31,8 @@ window.addEventListener('load', () => {
         const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
         image.src = url
         } else {
+        const { offsetWidth, offsetHeight} = activeImage
+
             const pixelRatio = window.devicePixelRatio || 1.0
             const imageParams = `w_${100 * Math.round(offsetWidth * pixelRatio / 100)},h_${100 * Math.round(offsetHeight * pixelRatio / 100)},c_fill,g_auto,f_auto`
             const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`

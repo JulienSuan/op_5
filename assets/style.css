@@ -21,6 +21,10 @@ header {
 header .name {
 	font-size: 26px;
 }
+img{
+    width: 100%;
+    height: auto;
+}
 
 nav ul {
 	display: flex;

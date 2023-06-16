@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 });
 
-const func =  () => {
+window.addEventListener('load', () => {
     const baseUrl = 'https://res.cloudinary.com/di897duch/image/upload'
     const activeImage = document.querySelector('.carousel-item.active img');
     Array.from(document.querySelectorAll('img')).forEach(image => {
@@ -38,6 +38,4 @@ const func =  () => {
         }
        
     })
-}
-
-func()
+})

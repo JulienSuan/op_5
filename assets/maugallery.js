@@ -37,7 +37,7 @@
         );
       }
 
-      $(this).fadeIn(3000);
+      $(this).fadeIn(300);
     });
   };
   $.fn.mauGallery.defaults = {
@@ -253,11 +253,11 @@
         if (tag === "all") {
           $(this)
             .parents(".item-column")
-            .show(300);
+            .show(0);
         } else if ($(this).data("gallery-tag") === tag) {
           $(this)
             .parents(".item-column")
-            .show(300);
+            .show(0);
         }
       });
     }

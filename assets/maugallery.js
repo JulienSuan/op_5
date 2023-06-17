@@ -249,15 +249,17 @@
       $(".gallery-item").each(function() {
         $(this)
           .parents(".item-column")
-          .hide();
+          .addClass('d-none');
         if (tag === "all") {
           $(this)
             .parents(".item-column")
-            .show(0);
+            .removeClass('d-none');
+
         } else if ($(this).data("gallery-tag") === tag) {
           $(this)
             .parents(".item-column")
-            .show(0);
+            .removeClass('d-none');
+
         }
       });
     }

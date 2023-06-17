@@ -30,14 +30,17 @@ $(document).ready(function() {
       const { offsetWidth, offsetHeight } = activeImage;
       console.log(offsetWidth, offsetHeight);
       const pixelRatio = window.devicePixelRatio || 1.0;
-      const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},c_fill,q_auto:eco,g_auto,f_webp`;
+      const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},c_fill,q_auto:eco,g_auto,f_auto`;
       const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`;
       image.src = url;
     } else {
       const { offsetWidth, offsetHeight } = image;
       console.log(offsetWidth, offsetHeight);
+      if (offsetWidth == 0) {
+        return
+      }
       const pixelRatio = window.devicePixelRatio || 1.0;
-      const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},q_auto:eco,c_fill,g_auto,f_webp`;
+      const imageParams = `w_${offsetWidth * pixelRatio},h_${offsetHeight * pixelRatio},q_auto:eco,c_fill,g_auto,f_auto`;
       const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`;
       image.src = url;
     }

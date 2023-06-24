@@ -1,196 +1,357 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photograph professionnel basé sur Bordeaux du lundi au vendredi de 10h à 19h !" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
+    <meta property="og:url" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
+    <meta property="og:title" content="Nina Carducii" />
+    <meta property="og:type" content="profil" />
+    <meta property="og:description" content="Photographe portraits & événementiel 📸" />
+    <meta property="author" content="ninacarducci.photo	" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/di897duch/image/upload/c_thumb,w_200,g_face/v1686910185/op_5/images/nina_dwklkg.png"
+    />
+    <link rel="font" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <title>Shooting photo, retouches, album. Nina Carducci Photograph</title>
+    <link rel="preload" href="./assets/style.css" as="style" />
+    <link rel="stylesheet" href="./assets/style.css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Photograph professionnel basé sur Bordeaux du lundi au vendredi de 10h à 19h !">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
-	<meta property="og:url" content="https://www.instagram.com/ninacarducci.photo/?hl=fr">
-	<meta property="og:title" content="Nina Carducii" />
-	<meta property="og:type" content="profil" />
-	<meta property="og:description" content="Photographe portraits & événementiel 📸" />
-	<meta property="author" content="ninacarducci.photo	" />
-	<meta property="og:image" content="https://res.cloudinary.com/di897duch/image/upload/v1686910185/op_5/imagesss/nina_dwklkg.png" />
-	<link rel="font" href="https://fonts.googleapis.com">
-	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
-	<title>Shooting photo, retouches, album. Nina Carducci Photograph</title>
-	<link rel="preload" href="./assets/style.css" as="style">
-	<link rel="stylesheet" href="./assets/style.css" media="print" onload="this.media='all'">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" media="print" onload="this.media='all'">
-	
-	<meta charset="UTF-8">
-</head>
-<body class="invisible">
-<header>
-	<h1 class="name">Nina Carducci</h1>
-	
-	<nav>   
-		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img  width="20px" height="20px" data-bg="v1686910184/op_5/imagesss/instagram_fmghvu" src="https://res.cloudinary.com/di897duch/image/upload/w_50,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/instagram_fmghvu" alt="Logo instagram"></a></li>
-		</ul>
-	</nav>
-</header>
-<main id="header">
-	<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img height="auto" data-bg="v1686910185/op_5/imagesss/ryoji-iwata-wUZjnOv7t0g-unsplash_s9cble" src="https://res.cloudinary.com/di897duch/image/upload/v1686910185/op_5/imagesss/ryoji-iwata-wUZjnOv7t0g-unsplash_s9cble" class="d-block w-100" alt="Photo d'un homme vêtu d'un costume noir pris de dos marchant valise à la main sur un trottoir">
-			</div>
-			<div class="carousel-item">
-				<img height="auto"   data-bg="v1686910185/op_5/imagesss/nicholas-green-nPz8akkUmDI-unsplash_fdlxto" src="https://res.cloudinary.com/di897duch/image/upload/v1686910185/op_5/imagesss/nicholas-green-nPz8akkUmDI-unsplash_fdlxto" class="d-block w-100" alt="Photo de deux hommes dans un festival levant les bras">
-			</div>
-			<div class="carousel-item">
-				<img height="auto"  data-bg="v1686910184/op_5/imagesss/edward-cisneros-3_h6-1NPDGw-unsplash_emc3ck" src="https://res.cloudinary.com/di897duch/image/upload/v1686910184/op_5/imagesss/edward-cisneros-3_h6-1NPDGw-unsplash_emc3ck" class="d-block w-100" alt="Photo d'un mariage où le marier embrasse la marier">
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</section>
-</main>
-<article id="about">
-	<div class="picture left">
-		<img  height="100%" width="100%" data-bg="v1686910185/op_5/imagesss/nina_dwklkg" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910185/op_5/imagesss/nina_dwklkg" alt="Photo de moi">
-	</div>
-	<section id="about-me">
-		
-		<h2 class="about-me__title">A propos de moi</h2>
-		<q class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</q>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-			<div itemscope itemtype="http://schema.org/Photograph">
-				<span itemprop="name">Nina Carducci</span>
-				<div itemprop="creator" itemscope itemtype="http://schema.org/Person">
-				  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-					<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-					<span itemprop="addressLocality">Bordeaux</span>,
-					<span itemprop="addressRegion">Bordeaux</span>
-					<span itemprop="postalCode">33200</span>
-					<span itemprop="telephone">05 56 67 78 89</span>
-				  </div>
-				</div>
-			  </div>	  
-			
-	</section>
-</article>
-<section id="gallery">
-	<h2 class="title">Portfolio</h2>
-	<div class="container py-3">
-		<div class="gallery">
-			<img data-bg="v1686910184/op_5/imagesss/aaron-paul-wnX-fXzB6Cw-unsplash_oue29d"  alt="Photo d'un festival aux éclairages rouges" data-gallery-tag="Concert" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/aaron-paul-wnX-fXzB6Cw-unsplash_oue29d"/>
-			<img data-bg="v1686910184/op_5/imagesss/ali-morshedlou-WMD64tMfc4k-unsplash_ffm3kb"  alt="Photo d'un homme souriant en costume noir à la cravate rouge croisant les bras avec un air assuré" data-gallery-tag="Entreprises" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/ali-morshedlou-WMD64tMfc4k-unsplash_ffm3kb"/>
-			<img data-bg="v1686910184/op_5/imagesss/jason-goodman-tHO1_OuKbg0-unsplash_kjiqfj"  alt="Photo d'une femme assise rigolant" data-gallery-tag="Entreprises" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/jason-goodman-tHO1_OuKbg0-unsplash_kjiqfj"/>
-			<img data-bg="v1686910184/op_5/imagesss/hannah-busing-RvF2R_qMpRk-unsplash_wlvbpu"  alt="Photo avec les bras d'un homme et d'une femme ouverts vers le ciel se tenant les mains" data-gallery-tag="Mariages" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/hannah-busing-RvF2R_qMpRk-unsplash_wlvbpu"/>
-			<img data-bg="v1686910184/op_5/imagesss/ade-tunji-rVkhWWZFAtQ-unsplash_e3tgrj"  alt="Photo d'un homme fermant les yeux le soleil sur son visage à la plage" data-gallery-tag="Portrait" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/ade-tunji-rVkhWWZFAtQ-unsplash_e3tgrj"/>
-			<img data-bg="v1686910184/op_5/imagesss/jakob-owens-SiniLJkXhMc-unsplash_ezaunp"  alt="Photo d'un mariage avec des marriers mains dans la main les regards croissants" data-gallery-tag="Mariages" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/jakob-owens-SiniLJkXhMc-unsplash_ezaunp"/>
-			<img data-bg="v1686910185/op_5/imagesss/nino-van-prattenburg--443cl1uR_8-unsplash_ktbocj"  alt="Photo d'une femme le regard ailleurs se tenant les cheveux à l'arrière" data-gallery-tag="Portrait" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910185/op_5/imagesss/nino-van-prattenburg--443cl1uR_8-unsplash_ktbocj"/>
-			<img data-bg="v1686910184/op_5/imagesss/austin-neill-hgO1wFPXl3I-unsplash_czt9m7"  alt="Photo d'un chanteur le micro à la main pointé vers le ciel sur scène" data-gallery-tag="Concert" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/austin-neill-hgO1wFPXl3I-unsplash_czt9m7"/>
-			<img data-bg="v1686910184/op_5/imagesss/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_ovoisj"  alt="Photo d'une femme assise sur un bureau souriant à pleine dent" data-gallery-tag="Entreprises" class="gallery-item" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910184/op_5/imagesss/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_ovoisj"/>
-		</div>
-	</div>
-			<div class="quote">
-				<q class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</q>
-			</div>
-			<div class="quote__author">- Richard Avedon</div>
-</section>
-<section id="services">
-	<h2 class="title">Mes services</h2>
-	<div class="container">
-		<div class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-			</div>
-			<div class="service__price">
-				<p>350€/demi journée</p>
-				<span>Matériel, déplacement inclus</span>
-			</div>
+    <meta charset="UTF-8" />
+  </head>
 
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<hgroup>
-					<h3>Retouches</h3>
-					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-				</hgroup>
-			</div>
-			<div class="service__price">
-				<hgroup>
-					<p>50€/photo</p>
-					<span>2 AR par photo</span>
-				</hgroup>
-			</div>
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<hgroup>
-					<h3>Album photos</h3>
-					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-				</hgroup>
-			</div>
-			<div class="service__price">
-				<p>400€ album A4</p>
-				<span>30 pages recto/verso</span>
-			</div>
-		</div>
-	</div>
-</section>
-<div class="quote">
-	<figure>
-		<div>
-			<q class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</q>
-		</div>
-		<div class="quote__author">- Richard Avedon</div>
-	</figure>
-</div>
-<footer id="contact">
-	<article class="container">
-		<div class="form-container">
-			<hgroup>
-				<h3>Une question ? Une demande de devis ?</h3>
-				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			</hgroup>
-			<form action="" method="post">
-				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</div>
-		<div class="picture right">
-			<img data-bg="v1686910185/op_5/imagesss/camera_tjbapq"  height="100%" width="100%" src="https://res.cloudinary.com/di897duch/image/upload/w_450,c_fill,g_auto,f_auto/v1686910185/op_5/imagesss/camera_tjbapq" alt="Image d'un appareil photo">
-		</div>
-	</article>
-</footer>
+  <body class="invisible">
+    <header>
+      <h1 class="name">Nina Carducci</h1>
 
-<script>
-	window.addEventListener("load", () => {
-  document.body.classList.remove("invisible")
-})
-</script>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
+              ><img
+                width="20px"
+                height="20px"
+                data-bg="v1686910184/op_5/images/instagram_fmghvu"
+                src="./assets/images/instagram.png"
+                alt="Logo instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="header">
+      <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              height="auto"
+              data-bg="v1686910185/op_5/images/ryoji-iwata-wUZjnOv7t0g-unsplash_s9cble"
+              src="./assets/images/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+              class="d-block w-100"
+              alt="Photo d'un homme vêtu d'un costume noir pris de dos marchant valise à la main sur un trottoir"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              height="auto"
+              data-bg="v1686910185/op_5/images/nicholas-green-nPz8akkUmDI-unsplash_fdlxto"
+              src="./assets/images/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+              class="d-block w-100"
+              alt="Photo de deux hommes dans un festival levant les bras"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              height="auto"
+              data-bg="v1686910184/op_5/images/edward-cisneros-3_h6-1NPDGw-unsplash_emc3ck"
+              src="./assets/images/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+              class="d-block w-100"
+              alt="Photo d'un mariage où le marier embrasse la marier"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+    </main>
+    <article id="about">
+      <div class="picture left">
+        <img
+          height="100%"
+          width="100%"
+          data-bg="v1686910185/op_5/images/nina_dwklkg"
+          src="./assets/images/nina.png"
+          alt="Photo de moi"
+        />
+      </div>
+      <section id="about-me">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <q class="about-me__introduction"
+          >Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une
+          émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</q
+        >
+        <p>
+          Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer
+          au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le
+          partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon
+          regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour,
+          du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
+        </p>
+        <div itemscope itemtype="http://schema.org/Photograph">
+          <span itemprop="name">Nina Carducci</span>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+              <span itemprop="addressLocality">Bordeaux</span>,
+              <span itemprop="addressRegion">Bordeaux</span>
+              <span itemprop="postalCode">33200</span>
+              <span itemprop="telephone">05 56 67 78 89</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section id="gallery">
+      <h2 class="title">Portfolio</h2>
+      <div class="container py-3">
+        <div class="gallery">
+          <img
+            data-bg="v1686910184/op_5/images/aaron-paul-wnX-fXzB6Cw-unsplash_oue29d"
+            alt="Photo d'un festival aux éclairages rouges"
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/ali-morshedlou-WMD64tMfc4k-unsplash_ffm3kb"
+            alt="Photo d'un homme souriant en costume noir à la cravate rouge croisant les bras avec un air assuré"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/jason-goodman-tHO1_OuKbg0-unsplash_kjiqfj"
+            alt="Photo d'une femme assise rigolant"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/hannah-busing-RvF2R_qMpRk-unsplash_wlvbpu"
+            alt="Photo avec les bras d'un homme et d'une femme ouverts vers le ciel se tenant les mains"
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/ade-tunji-rVkhWWZFAtQ-unsplash_e3tgrj"
+            alt="Photo d'un homme fermant les yeux le soleil sur son visage à la plage"
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/jakob-owens-SiniLJkXhMc-unsplash_ezaunp"
+            alt="Photo d'un mariage avec des marriers mains dans la main les regards croissants"
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910185/op_5/images/nino-van-prattenburg--443cl1uR_8-unsplash_ktbocj"
+            alt="Photo d'une femme le regard ailleurs se tenant les cheveux à l'arrière"
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/austin-neill-hgO1wFPXl3I-unsplash_czt9m7"
+            alt="Photo d'un chanteur le micro à la main pointé vers le ciel sur scène"
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+          />
+          <img
+            data-bg="v1686910184/op_5/images/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_ovoisj"
+            alt="Photo d'une femme assise sur un bureau souriant à pleine dent"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+          />
+        </div>
+      </div>
+      <div class="quote">
+        <q class="quote__text"
+          >Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse
+          d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont
+          exactes. Aucune d’elles n’est la vérité.</q
+        >
+      </div>
+      <div class="quote__author">- Richard Avedon</div>
+    </section>
+    <section id="services">
+      <h2 class="title">Mes services</h2>
+      <div class="container">
+        <div class="service">
+          <div class="service__description">
+            <h3>Shooting photo</h3>
+            <p>
+              Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
+              Île-de-France pour réaliser vos photos
+            </p>
+          </div>
+          <div class="service__price">
+            <p>350€/demi journée</p>
+            <span>Matériel, déplacement inclus</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <hgroup>
+              <h3>Retouches</h3>
+              <p>
+                Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour
+                vos publications
+              </p>
+            </hgroup>
+          </div>
+          <div class="service__price">
+            <hgroup>
+              <p>50€/photo</p>
+              <span>2 AR par photo</span>
+            </hgroup>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <hgroup>
+              <h3>Album photos</h3>
+              <p>
+                Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album
+                photo personnalisé
+              </p>
+            </hgroup>
+          </div>
+          <div class="service__price">
+            <p>400€ album A4</p>
+            <span>30 pages recto/verso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="quote">
+      <figure>
+        <div>
+          <q class="quote__text"
+            >De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable
+            de résumer ou plus exactement de révéler une vie</q
+          >
+        </div>
+        <div class="quote__author">- Richard Avedon</div>
+      </figure>
+    </div>
+    <footer id="contact">
+      <article class="container">
+        <div class="form-container">
+          <hgroup>
+            <h3>Une question ? Une demande de devis ?</h3>
+            <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+          </hgroup>
+          <form action="" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+        <div class="picture right">
+          <img
+            data-bg="v1686910185/op_5/images/camera_tjbapq"
+            height="100%"
+            width="100%"
+            src="./assets/images/camera.png"
+            alt="Image d'un appareil photo"
+          />
+        </div>
+      </article>
+    </footer>
 
-</body>
+    <script>
+      window.addEventListener('load', () => {
+        document.body.classList.remove('invisible');
+      });
+    </script>
+  </body>
 </html>
